@@ -41,7 +41,7 @@ export default function Hero() {
                             <h1 className="text-5xl md:text-8xl pb-4 font-bold">Hello</h1>
                             <h2 className="text-xl font-semibold">A Bit About Me</h2>
                             <p className="font-light leading-relaxed tracking-wide md:max-w-md">
-                                I'm a full stack developer with a passion for crafting exceptional user experiences. With expertise in both front-end and back-end development, I'm a final-year CS student equipped with a keen eye for detail and a drive for innovation aiming to build innovative AI solutions that push the boundaries of web development.</p>                    </div>
+                                I&apos;m a full stack developer with a passion for crafting exceptional user experiences. With expertise in both front-end and back-end development and a final-year CS student equipped with a keen eye for detail and a drive for innovation aiming to build innovative AI solutions that push the boundaries of web development.</p>                    </div>
 
                         <div className="flex justify-center md:justify-start gap-8 my-10">
 

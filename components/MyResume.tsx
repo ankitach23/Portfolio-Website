@@ -1,3 +1,4 @@
+import index from "@/pages"
 import { Navbar } from "./Navbar"
 import Footer from "./footer"
 const resume = [
@@ -6,7 +7,7 @@ const resume = [
         "date": "Mar 2022 - Present",
         "title": "Software Developer Intern",
         "company": "Future First",
-        "description":"Developed FFI's official website with technical precision and contributed to advanced AI-driven SOP functionality and an immigration chatbot at Tootler AI, emphasizing innovation and user experience."
+        "description":"Developed FFI official website with technical precision and contributed to advanced AI-driven SOP functionality and an immigration chatbot at Tootler AI, emphasizing innovation and user experience."
     },
     {
         "id": 2,
@@ -104,7 +105,7 @@ export default function Resume() {
                     <h2 className="text-2xl font-bold w-2">Work Experience</h2>
                     <div className="flex flex-col ">
                         {resume.map((item) => (
-                            <div className="grid grid-cols-3 gap-4 my-8">
+                            <div key={item.id} className="grid grid-cols-3 gap-4 my-8">
                                <div> <p className="font-light mt-[3px] tracking-tight">{item.date}</p></div>
                                 <div className=" col-span-2">
                                     <p className="text-lg font-medium">{item.title} , <span className="font-normal" >{item.company}</span></p>
@@ -121,9 +122,9 @@ export default function Resume() {
                 </div>
                 <div className="md:grid grid-cols-2 border-b border-slate-300 pb-4 my-10 md:my-14">
                     <h2 className="text-2xl font-bold w-2">Education</h2>
-                    <div className="flex flex-col ">
+                    <div  className="flex flex-col ">
                         {education.map((item) => (
-                            <div className="grid grid-cols-3 gap-4 my-8">
+                            <div  key={item.id} className="grid grid-cols-3 gap-4 my-8">
                                <div> <p className="font-light mt-[3px]">{item.date}</p></div>
                                 <div className=" col-span-2">
                                     <p className="text-lg font-medium">{item.institution}<span className="font-light px-4" >{item.score}</span></p>
@@ -146,8 +147,8 @@ export default function Resume() {
                     <h2 className="text-2xl font-bold w-2">Skills</h2>
                     <div className="flex flex-col">
                         <div className="flex flex-wrap gap-4">
-                            {skills.map((item) => (
-                                <div className="bg-gray-200 px-4 py-2 rounded-md">{item}</div>
+                            {skills.map((item,index) => (
+                                <div  key={index} className="bg-gray-200 px-4 py-2 rounded-md">{item}</div>
                             ))}
                         </div>
                     </div>

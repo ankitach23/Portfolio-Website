@@ -42,7 +42,7 @@ export default function Projects(){
             <div className="font-montserrat  px-4  max-w-5xl mx-auto">
                <h1 className="text-2xl md:text-4xl my-8 md:my-16 font-bold">Projects</h1>  
                {projects.map((item) => (
-                            <div className="flex flex-col  md:flex-row my-8 md:my-20 justify-between">
+                            <div key={item.id} className="flex flex-col  md:flex-row my-8 md:my-20 justify-between">
                                 <div className="flex flex-col gap-4 my-4 md:my-0">
                                     <Link href={item.href}>
                                     <p className="text-2xl  font-bold">{item.name}</p>

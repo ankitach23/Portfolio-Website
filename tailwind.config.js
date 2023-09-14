@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Helvetica Neue', 'Helvetica', 'sans-serif'],
-        montserrat:['Montserrat']
+        montserrat:['PT Sans', 'sans-serif']
         
       },
     },

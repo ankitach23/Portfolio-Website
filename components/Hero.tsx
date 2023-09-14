@@ -45,9 +45,9 @@ export default function Hero() {
 
                         <div className="flex justify-center md:justify-start gap-8 my-10">
 
-                            <Link href="/resume"><div className="bg-my-yellow rounded-full px-2 py-7 md:px-8 md:py-14 font-medium text-xl border border-black tracking-wide hover:bg-white">Resume</div></Link>
-                            <Link href="/projects"><div className="bg-my-red rounded-full px-2 py-7  md:px-8 md:py-14 font-medium text-xl border border-black tracking-wide hover:bg-white">Projects</div></Link>
-                            <Link href="/contact"><div className="bg-my-blue rounded-full px-2 py-7   md:px-8 md:py-14 font-medium text-xl border border-black tracking-wide hover:bg-white">Contact</div></Link>
+                            <Link href="/resume"><div className="bg-my-yellow rounded-full px-2 py-7 md:px-8 md:py-14 font-medium md:text-xl border border-black tracking-wide hover:bg-white">Resume</div></Link>
+                            <Link href="/projects"><div className="bg-my-red rounded-full px-2 py-7  md:px-8 md:py-14 font-medium md:text-xl border border-black tracking-wide hover:bg-white">Projects</div></Link>
+                            <Link href="/contact"><div className="bg-my-blue rounded-full px-2 py-7   md:px-8 md:py-14 font-medium md:text-xl border border-black tracking-wide hover:bg-white">Contact</div></Link>
 
                         </div>
                     </div>

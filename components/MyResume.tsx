@@ -97,12 +97,12 @@ export default function Resume() {
             <Navbar />
             <div className="px-4  max-w-5xl mx-auto font-montserrat">
                 <div className="flex justify-between items-center">
-                <h1 className="text-2xl md:text-4xl md:my-16 font-bold ">Resume</h1>
+                <h1 className="text-2xl md:text-4xl my-4 md:my-10 font-bold ">Resume</h1>
                 <button onClick={handleDownload} className=" border border-black rounded-full text-sm h-fit my-auto px-3 py-1">Download Resume</button>
                 </div>
 
-                <div className="md:grid grid-cols-2 border-b border-slate-300 pb-4">
-                    <h2 className="text-2xl font-bold w-2">Work Experience</h2>
+                <div className="md:grid grid-cols-2 border-b border-slate-300 pb-4 ">
+                    <h2 className="text-2xl font-bold w-2 mt-8">Work Experience</h2>
                     <div className="flex flex-col ">
                         {resume.map((item) => (
                             <div key={item.id} className="grid grid-cols-3 gap-4 my-8">
@@ -121,7 +121,7 @@ export default function Resume() {
 
                 </div>
                 <div className="md:grid grid-cols-2 border-b border-slate-300 pb-4 my-10 md:my-14">
-                    <h2 className="text-2xl font-bold w-2">Education</h2>
+                    <h2 className="text-2xl font-bold w-2 mt-8">Education</h2>
                     <div  className="flex flex-col ">
                         {education.map((item) => (
                             <div  key={item.id} className="grid grid-cols-3 gap-4 my-8">
@@ -144,8 +144,8 @@ export default function Resume() {
                 </div> */}
                 </div>
                 <div className="md:grid grid-cols-2 my-10 md:my-14">
-                    <h2 className="text-2xl font-bold w-2">Skills</h2>
-                    <div className="flex flex-col">
+                    <h2 className="text-2xl font-bold w-2 mt-10">Skills</h2>
+                    <div className="flex flex-col my-10">
                         <div className="flex flex-wrap gap-4">
                             {skills.map((item,index) => (
                                 <div  key={index} className="bg-gray-200 px-4 py-2 rounded-md">{item}</div>
